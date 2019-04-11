@@ -1,5 +1,23 @@
-public class Salary extends ConsumerService<Integer> {
-	public Salary(String from, String to, int pay) {
-		super(from, to, pay);
+public class Salary implements ConsumerService<Integer> {
+	private String from;
+	private String to;
+	private int content;
+
+	public Salary(String from, String to, int content) {
+		this.from = from;
+		this.to = to;
+		this.content = content;
+	}
+
+	public String getFrom() {
+		return from;
+	}
+
+	public String getTo() {
+		return to;
+	}
+
+	public Integer getContent() {
+		return content;
 	}
 }

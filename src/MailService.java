@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.function.Consumer;
 
 public class MailService<T> implements Consumer<ConsumerService<T>> {
-	private Map<String, List<T>> mailBox;
+	private HashMap<String, List<T>> mailBox;
 
 	public MailService() {
 		mailBox = new HashMap<String, List<T>>() {

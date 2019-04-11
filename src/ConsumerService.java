@@ -1,23 +1,7 @@
-public class ConsumerService<T> {
-	private String from;
-	private String to;
-	private T content;
+public interface ConsumerService<T> {
+	String getFrom();
 
-	public ConsumerService(String from, String to, T content) {
-		this.from = from;
-		this.to = to;
-		this.content = content;
-	}
+	String getTo();
 
-	public String getFrom() {
-		return from;
-	}
-
-	public String getTo() {
-		return to;
-	}
-
-	public T getContent() {
-		return content;
-	}
+	T getContent();
 }

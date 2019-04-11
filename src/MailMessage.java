@@ -1,5 +1,23 @@
-public class MailMessage extends ConsumerService<String> {
+public class MailMessage implements ConsumerService<String> {
+	private String from;
+	private String to;
+	private String content;
+
 	public MailMessage(String from, String to, String content) {
-		super(from, to, content);
+		this.from = from;
+		this.to = to;
+		this.content = content;
+	}
+
+	public String getFrom() {
+		return from;
+	}
+
+	public String getTo() {
+		return to;
+	}
+
+	public String getContent() {
+		return content;
 	}
 }
