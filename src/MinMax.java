@@ -5,7 +5,6 @@ import java.util.function.BiConsumer;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-
 public class MinMax {
 	public static void main(String[] args) {
 		LinkedList<Integer> list = new LinkedList<>(Arrays.asList(1, 2, 3, 5));
